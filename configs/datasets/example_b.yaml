@@ -1,0 +1,7 @@
+name: example_b
+processed_dir: data/example_b/processed
+split:
+  train: train
+  validation: validation
+  test: test
+

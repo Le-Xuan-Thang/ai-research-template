@@ -1,0 +1,4 @@
+name: baseline
+# Add only parameters that define the model.
+parameters: {}
+

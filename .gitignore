@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and local configuration
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Notebooks and editors
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Dataset payloads: keep READMEs and placeholder files
+data/*/raw/**
+data/*/interim/**
+data/*/processed/**
+!data/*/raw/.gitkeep
+!data/*/interim/.gitkeep
+!data/*/processed/.gitkeep
+
+# Large experiment artifacts
+experiments/**/checkpoints/**
+!experiments/**/checkpoints/.gitkeep
+experiments/**/*.ckpt
+experiments/**/*.pt
+experiments/**/*.pth
+experiments/**/*.onnx
+experiments/**/*.npy
+experiments/**/*.npz
+experiments/**/*.tensorboard/
+experiments/**/*.log
+
+# Temporary/generated local outputs
+outputs/
+tmp/
+*.tmp
+
+# Paper build products (source remains tracked)
+paper/**/*.aux
+paper/**/*.bbl
+paper/**/*.blg
+paper/**/*.fdb_latexmk
+paper/**/*.fls
+paper/**/*.log
+paper/**/*.out
+paper/**/*.synctex.gz
+paper/main.pdf

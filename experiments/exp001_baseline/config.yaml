@@ -1,0 +1,24 @@
+# Snapshot of the fully resolved configuration used for this illustrative run.
+experiment_id: exp001_baseline
+status: template_not_run
+seed: 42
+datasets:
+  example_a:
+    processed_dir: data/example_a/processed
+    split: {train: train, validation: validation, test: test}
+  example_b:
+    processed_dir: data/example_b/processed
+    split: {train: train, validation: validation, test: test}
+model:
+  name: baseline
+  parameters: {}
+optimizer:
+  name: adam
+  learning_rate: 0.001
+batch_size: 32
+epochs: 10
+augmentation: none
+evaluation:
+  protocol: held_out_test
+  primary_metric: accuracy
+

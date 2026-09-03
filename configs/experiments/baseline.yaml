@@ -1,0 +1,16 @@
+name: baseline
+seed: 42
+datasets:
+  - example_a
+  - example_b
+model: baseline
+optimizer:
+  name: adam
+  learning_rate: 0.001
+batch_size: 32
+epochs: 10
+augmentation: none
+evaluation:
+  protocol: held_out_test
+  primary_metric: accuracy
+

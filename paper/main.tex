@@ -1,0 +1,68 @@
+\documentclass[a4paper,fleqn]{cas-sc}
+
+\usepackage[numbers]{natbib}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\begin{document}
+
+\shorttitle{Short Article Title}
+\shortauthors{First Author et al.}
+
+\title[mode=title]{Research Article Title}
+
+\author[1]{First Author}[orcid=0000-0000-0000-0000]
+\ead{author@example.com}
+\address[1]{organization={Institution Name},
+             city={City},
+             country={Country}}
+
+\begin{abstract}
+Replace this placeholder with an evidence-grounded abstract after the experiments and conclusions are stable.
+\end{abstract}
+
+\begin{keywords}
+artificial intelligence \sep machine learning \sep reproducible research
+\end{keywords}
+
+\maketitle
+
+\section{Introduction}
+\label{sec:introduction}
+
+% Establish the verified context, research gap, objective, and contributions.
+% Follow Skills/write-ai-paper/Introduction.md before drafting this section.
+
+\section{Methodology}
+\label{sec:methods}
+
+% Describe the proposed method with enough precision to reproduce it.
+% Follow the equation guidance when introducing mathematical notation.
+
+\section{Experimental setup}
+\label{sec:experimental-setup}
+
+% Record datasets, splits, preprocessing, baselines, metrics, seeds, hardware,
+% implementation details, and statistical protocol from experiment evidence.
+
+\section{Results and discussion}
+\label{sec:results-discussion}
+
+% Trace every value to an experiment snapshot and discuss limitations honestly.
+% Figures belong in figs/ and should identify their generating analysis.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+% Answer the research question without introducing unsupported new claims.
+
+\section*{Declaration of competing interest}
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+\section*{Data availability}
+Replace this placeholder with the actual data and code availability statement.
+
+\bibliographystyle{cas-model2-names}
+\bibliography{references}
+
+\end{document}
