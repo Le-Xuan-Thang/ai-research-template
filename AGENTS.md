@@ -46,6 +46,10 @@ the handoff as due whenever any of these is true:
 - you started something long-running (a training run, a background job) that will outlive you;
 - you are about to begin a step that could consume a large amount of budget;
 - the user has been idle and the session may be closed at any moment.
+- the user asks you to hand off, switch agents, pause, stop, or end the session.
+
+If the user requests a handoff or asks another agent to continue, update
+`.agent/handoff.md` before ending your response, unless there is no unfinished work.
 
 Update `.agent/handoff.md` so that an agent with **no memory of this conversation** can resume
 without re-deriving anything. It must answer:
