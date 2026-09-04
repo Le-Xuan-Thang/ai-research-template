@@ -15,6 +15,7 @@ Maintain `ai-research-template` as a lightweight, public, reusable, multi-datase
 - `website/` is a dependency-free project dashboard and `CHANGELOG.md` records notable releases and updates.
 - The public repository identity is `Le-Xuan-Thang/ai-research-template`; MIT is the canonical project license, with third-party Elsevier assets retaining their own notices and terms.
 - GitHub-facing contribution and citation metadata are available in `CONTRIBUTING.md` and `CITATION.cff`.
+- `AGENTS.md` requires proactive handoffs before context, quota, or long-running work can outlive a session.
 
 ## Active work
 

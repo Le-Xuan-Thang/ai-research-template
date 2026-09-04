@@ -6,6 +6,7 @@ All notable changes to this research project are documented here. This file foll
 
 ### Added
 
+- Proactive session-end handoff guidance for preserving unfinished agent work.
 - Project dashboard under `website/`.
 - Single-file Elsevier CAS manuscript, publication figure directory, and paper-writing guidance.
 - `uv`-first Python environment and dependency workflow.
