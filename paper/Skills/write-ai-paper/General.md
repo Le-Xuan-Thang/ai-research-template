@@ -640,13 +640,13 @@ Distinguish carefully.
 
 From 77.33% to 77.87%:
 
-`+0.54 percentage points`
+`+0.54 $\%$`
 
 is the absolute difference.
 
 Do not call it:
 
-`+0.54% improvement`
+`+0.54 $\%$ improvement`
 
 unless relative improvement was calculated.
 
@@ -702,7 +702,7 @@ Preferred forms include:
 
 `48\,GB`
 
-`95\%`
+`95$\%$`
 
 `$512\times512$`
 
@@ -952,21 +952,113 @@ Do not force either voice mechanically.
 
 ---
 
-# 56. Avoid “The authors”
+# 56. Prefer Third-Person and Impersonal Academic Style
 
-When writing the current manuscript, do not refer to the current research team as:
+When writing the current manuscript, use third-person or impersonal academic constructions by default.
 
-`the authors`
-
-unless required by a journal style.
-
-Use:
+Avoid referring to the current research team using:
 
 `we`
 
-or an impersonal construction.
+`our`
 
-Use `the authors` only when referring to authors of another study.
+`us`
+
+or:
+
+`the authors`
+
+unless the target journal explicitly requires or strongly prefers first-person writing.
+
+Preferred constructions include:
+
+`This study proposes ...`
+
+`The proposed method uses ...`
+
+`The present work evaluates ...`
+
+`The experimental results show ...`
+
+`The framework is evaluated on ...`
+
+`The analysis examines ...`
+
+`The model is trained using ...`
+
+Avoid:
+
+`We propose ...`
+
+`We evaluate ...`
+
+`Our method achieves ...`
+
+`The authors propose ...`
+
+when referring to the current study.
+
+Preferred:
+
+```latex
+This study proposes TAWS-Net for vibration-based structural condition classification.
+```
+
+rather than:
+
+```latex
+We propose TAWS-Net for vibration-based structural condition classification.
+```
+
+Preferred:
+
+```latex
+The proposed method is evaluated on four datasets.
+```
+
+rather than:
+
+```latex
+We evaluate the proposed method on four datasets.
+```
+
+Preferred:
+
+```latex
+TAWS-Net achieves the highest test accuracy on D4.
+```
+
+rather than:
+
+```latex
+Our model achieves the highest test accuracy on D4.
+```
+
+The phrase `the authors` should be used only when referring to the authors of another publication, for example:
+
+```latex
+The authors reported improved classification accuracy under variable operating conditions.
+```
+
+When possible, prefer the cited author name instead:
+
+```latex
+\citet{smith2025method} reported improved classification accuracy under variable operating conditions.
+```
+
+Do not force passive voice in every sentence. Third-person active constructions such as:
+
+`This study investigates ...`
+
+`The proposed framework combines ...`
+
+`TAWS-Net achieves ...`
+
+are preferred when they are clearer than passive alternatives.
+
+### Core Rule
+
+**Use third-person or impersonal academic constructions throughout the manuscript. Avoid `we`, `our`, `us`, and `the authors` when referring to the current study unless required by the target journal.**
 
 ---
 
@@ -1676,6 +1768,50 @@ Scientific writing should sound like the work of a careful domain researcher, no
 The default writing principle is:
 
 **technical precision + evidence discipline + natural sentence variation + terminology consistency + restrained academic tone**
+
+# 101. Percentage Formatting
+
+When writing LaTeX manuscript text, always express the percent sign in math mode using the exact form:
+
+```latex
+$\%$
+```
+
+A numerical percentage must therefore be written as:
+
+```latex
+99.15$\%$
+81.94$\%$
+0.50$\%$
+```
+
+Do not use any of the following forms:
+
+```latex
+99.15\%
+99.15%
+99.15 $ \% $
+```
+
+The required manuscript convention is:
+
+```latex
+<number>$\%$
+```
+
+with no space between the numerical value and `$\%$`.
+
+Examples:
+
+```latex
+TAWS-Net achieves a test accuracy of 99.15$\%$.
+```
+
+When the user requests LaTeX-ready text or LaTeX source, preserve the literal source notation `$\%$` exactly. Do not replace it with `\%`, and do not rely on rendered mathematical output when showing code intended for direct insertion into the manuscript.
+
+### Core Rule
+**Every percentage value in LaTeX manuscript prose must follow the form `<number>$\%$`, for example `81.94$\%$`.**
+
 
 # CORE RULE
 
