@@ -1,4 +1,4 @@
-# TAWs-Transformer General Academic Writing Rules
+# General Academic Writing Rules
 
 ## 1. Scope
 
