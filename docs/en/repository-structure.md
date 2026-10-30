@@ -42,7 +42,7 @@ This is the importable Python package. Begin with small modules; split them only
 
 ### `docs/`, `paper/`, `website/`, and `.agent/`
 
-`docs/en/` is canonical human documentation and `docs/vi/` contains aligned translations. `paper/` is an Elsevier CAS LaTeX workspace: the complete article stays in one `main.tex`, figures live in `figs/`, and the local writing skill guides AI-assisted manuscript work. `website/` is a dependency-free project dashboard that summarizes canonical evidence without replacing it. `.agent/` contains current operational context and durable decisions, not transcripts or a second experiment history. `CHANGELOG.md` records notable project versions and updates.
+`docs/en/` is canonical human documentation and `docs/vi/` contains aligned translations. `paper/` is an Elsevier CAS LaTeX workspace: the complete article stays in one `main.tex`, figures live in `figs/`, the local writing skill guides AI-assisted manuscript work, `nature-figure` sets the figure contract and automated figure QA, and `nature-reviewer` runs requested mock peer reviews whose records stay in `experiments/`. `website/` is a dependency-free project dashboard that summarizes canonical evidence without replacing it. `.agent/` contains current operational context and durable decisions, not transcripts or a second experiment history. `CHANGELOG.md` records notable project versions and updates.
 
 ## What belongs in Git
 

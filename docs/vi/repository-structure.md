@@ -42,7 +42,7 @@ Mỗi bộ dữ liệu là một thực thể nghiên cứu độc lập và có
 
 ### `docs/`, `paper/`, `website/` và `.agent/`
 
-`docs/en/` là tài liệu chuẩn và `docs/vi/` chứa bản dịch tương ứng. `paper/` là workspace LaTeX Elsevier CAS: toàn bộ bài báo nằm trong một `main.tex`, hình nằm trong `figs/`, và skill viết bài cục bộ hướng dẫn agent AI. `website/` là dashboard dự án không cần dependency, chỉ tổng hợp các bằng chứng chuẩn chứ không thay thế chúng. `.agent/` chứa ngữ cảnh vận hành hiện tại và quyết định lâu dài, không phải bản ghi hội thoại hay lịch sử thí nghiệm thứ hai. `CHANGELOG.md` ghi các phiên bản và cập nhật đáng chú ý.
+`docs/en/` là tài liệu chuẩn và `docs/vi/` chứa bản dịch tương ứng. `paper/` là workspace LaTeX Elsevier CAS: toàn bộ bài báo nằm trong một `main.tex`, hình nằm trong `figs/`, skill viết bài cục bộ hướng dẫn agent AI, `nature-figure` quy định hợp đồng hình và kiểm tra hình tự động, còn `nature-reviewer` chạy mô phỏng phản biện khi được yêu cầu, với hồ sơ lưu trong `experiments/`. `website/` là dashboard dự án không cần dependency, chỉ tổng hợp các bằng chứng chuẩn chứ không thay thế chúng. `.agent/` chứa ngữ cảnh vận hành hiện tại và quyết định lâu dài, không phải bản ghi hội thoại hay lịch sử thí nghiệm thứ hai. `CHANGELOG.md` ghi các phiên bản và cập nhật đáng chú ý.
 
 ## Nội dung nên đưa vào Git
 

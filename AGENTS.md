@@ -22,6 +22,8 @@ Repository rules:
 - Prefer `uv` for Python version, environment, and dependency management when available. Keep `.python-version`, `pyproject.toml`, and `uv.lock` consistent; use standard `venv`/`pip` only as a fallback.
 - Keep the complete Elsevier manuscript in `paper/main.tex`; do not split it into section files. Put publication figures in `paper/figs/`.
 - Before writing or reviewing manuscript content, read `paper/Skills/write-ai-paper/SKILL.md`, its required `General.md`, and the routed task-specific guidance.
+- Before creating or changing any figure in `paper/figs/` or its plotting code, read `paper/Skills/nature-figure/SKILL.md`, run its audits, and record the results in a new `figure_qa_<date>_<nn>/` run record.
+- Run a mock peer review only when the user asks. Follow `paper/Skills/nature-reviewer/RUN.md` (protocol in its `SKILL.md`); keep reviews as internal evidence in a new run record, never in the manuscript.
 - Treat `website/` as a static evidence dashboard. Update it from canonical dataset, experiment, analysis, paper, and changelog records; do not maintain independent results there.
 - Record notable project-level changes in `CHANGELOG.md` under `Unreleased`.
 
