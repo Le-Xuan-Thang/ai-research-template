@@ -95,7 +95,7 @@ Xem [quy trình nghiên cứu đầy đủ](docs/vi/research-workflow.md).
 
 ## Quy trình agent AI
 
-Agent đọc [AGENTS.md](AGENTS.md), [.agent/state.md](.agent/state.md) và [.agent/handoff.md](.agent/handoff.md) nếu có trước khi sửa artifact nghiên cứu. Quyết định khoa học hoặc cấu trúc lâu dài nằm trong `.agent/decisions/`, không phải log hội thoại. Công việc bản thảo còn phải tuân theo [`write-ai-paper` skill](paper/Skills/write-ai-paper/SKILL.md) cục bộ.
+Agent đọc [AGENTS.md](AGENTS.md), [.agent/state.md](.agent/state.md) và [.agent/handoff.md](.agent/handoff.md) nếu có trước khi sửa artifact nghiên cứu. Quyết định khoa học hoặc cấu trúc lâu dài nằm trong `.agent/decisions/`, không phải log hội thoại. Công việc bản thảo còn phải tuân theo [`write-ai-paper` skill](paper/Skills/write-ai-paper/SKILL.md) cục bộ; hình bài báo theo [`nature-figure`](paper/Skills/nature-figure/SKILL.md), và khi được yêu cầu, mô phỏng phản biện chạy bằng [`nature-reviewer`](paper/Skills/nature-reviewer/RUN.md). Hai skill này được chuyển thể từ [nature-skills](https://github.com/Yuan1z0825/nature-skills) theo giấy phép Apache-2.0.
 
 ## Tài liệu
 
@@ -117,5 +117,5 @@ Nếu mẫu này hỗ trợ workflow nghiên cứu của bạn, metadata trích 
 
 ## Giấy phép
 
-Dự án này được phát hành theo giấy phép MIT. Xem [LICENSE](LICENSE) để biết chi tiết. Các tài sản mẫu Elsevier của bên thứ ba trong `paper/` giữ nguyên thông báo bản quyền và điều khoản riêng.
+Dự án này được phát hành theo giấy phép MIT. Xem [LICENSE](LICENSE) để biết chi tiết. Các tài sản mẫu Elsevier của bên thứ ba trong `paper/` giữ nguyên thông báo bản quyền và điều khoản riêng. `paper/Skills/nature-figure/`, `paper/Skills/nature-reviewer/` và `paper/Skills/nature-shared/` chuyển thể từ nature-skills và vẫn theo giấy phép Apache 2.0 (xem `LICENSE` và `NOTICE.md` trong từng thư mục).
 

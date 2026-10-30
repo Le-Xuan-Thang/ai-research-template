@@ -6,6 +6,7 @@ All notable changes to this research project are documented here. This file foll
 
 ### Added
 
+- Figure QA skill `paper/Skills/nature-figure/` (Python-only, collision, glyph-floor and panel-alignment audits) and mock peer-review skill `paper/Skills/nature-reviewer/` with run guide and templates, adapted from nature-skills (Apache-2.0).
 - Proactive session-end handoff guidance for preserving unfinished agent work.
 - Project dashboard under `website/`.
 - Single-file Elsevier CAS manuscript, publication figure directory, and paper-writing guidance.
