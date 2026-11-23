@@ -40,6 +40,10 @@ This is the importable Python package. Begin with small modules; split them only
 
 `configs/` holds editable, reusable starting configurations grouped by dataset, model, and experiment. An experiment directory holds the immutable record of an actual run. Its `config.yaml` is a fully resolved snapshot, not merely a pointer to mutable shared configs. Dataset-specific results live below the experiment; comparisons live in `summary/`.
 
+### `Skills/`
+
+Agent skills that are not specific to the manuscript (manuscript skills stay in `paper/Skills/`). `ramdisk-workspace` governs where long or file-heavy runs keep their intermediates and how kept results reach the experiment directory; its code is `src/project/ramdisk.py`.
+
 ### `docs/`, `paper/`, `website/`, and `.agent/`
 
 `docs/en/` is canonical human documentation and `docs/vi/` contains aligned translations. `paper/` is an Elsevier CAS LaTeX workspace: the complete article stays in one `main.tex`, figures live in `figs/`, the local writing skill guides AI-assisted manuscript work, `nature-figure` sets the figure contract and automated figure QA, and `nature-reviewer` runs requested mock peer reviews whose records stay in `experiments/`. `website/` is a dependency-free project dashboard that summarizes canonical evidence without replacing it. `.agent/` contains current operational context and durable decisions, not transcripts or a second experiment history. `CHANGELOG.md` records notable project versions and updates.

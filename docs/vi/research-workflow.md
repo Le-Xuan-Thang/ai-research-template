@@ -30,6 +30,8 @@ Dùng seed xác định khi phù hợp, ghi chi tiết phần mềm/phần cứn
 
 ## 5. Tổng hợp và công bố
 
+Với các lượt chạy dài hoặc sinh nhiều file, đặt dữ liệu trung gian tạo lại được trên ramdisk tmpfs nếu máy có, và chép (promote) các kết quả cuối vào thư mục thí nghiệm ngay sau mỗi lượt chạy, có kiểm tra checksum (`Skills/ramdisk-workspace/SKILL.md`, `src/project/ramdisk.py`).
+
 Đặt bảng, biểu đồ và kết luận liên bộ dữ liệu trong `experiments/<experiment>/summary/`. Dùng `notebooks/analysis/` cho so sánh, ablation, phân tích lỗi, thống kê và sinh hình. Nội dung sẵn sàng công bố có thể chuyển vào `paper/figs/` và tệp duy nhất `paper/main.tex`, đồng thời vẫn giữ liên kết đến thí nghiệm và cấu hình nguồn. Agent AI phải tuân theo `paper/Skills/write-ai-paper/SKILL.md` khi làm việc với bản thảo.
 
 Cập nhật `website/` bằng các điểm nổi bật, kết quả và cột mốc đã được xác minh. Website chỉ là lớp trình bày; giá trị chuẩn vẫn nằm trong hồ sơ thí nghiệm và đầu ra phân tích. Ghi thay đổi đáng chú ý của kho mã nguồn trong `CHANGELOG.md`.

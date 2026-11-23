@@ -92,7 +92,7 @@ See the full [research workflow](docs/en/research-workflow.md).
 
 ## AI agent workflow
 
-Agents read [AGENTS.md](AGENTS.md), [.agent/state.md](.agent/state.md), and any active [.agent/handoff.md](.agent/handoff.md) before modifying research artifacts. Durable scientific or structural decisions belong in `.agent/decisions/`, not chat transcripts. Manuscript work additionally follows the local [`write-ai-paper` skill](paper/Skills/write-ai-paper/SKILL.md); figures follow [`nature-figure`](paper/Skills/nature-figure/SKILL.md), and on request a mock peer review runs with [`nature-reviewer`](paper/Skills/nature-reviewer/RUN.md). Both are adapted from [nature-skills](https://github.com/Yuan1z0825/nature-skills) under Apache-2.0.
+Agents read [AGENTS.md](AGENTS.md), [.agent/state.md](.agent/state.md), and any active [.agent/handoff.md](.agent/handoff.md) before modifying research artifacts. Durable scientific or structural decisions belong in `.agent/decisions/`, not chat transcripts. Manuscript work additionally follows the local [`write-ai-paper` skill](paper/Skills/write-ai-paper/SKILL.md); figures follow [`nature-figure`](paper/Skills/nature-figure/SKILL.md), and on request a mock peer review runs with [`nature-reviewer`](paper/Skills/nature-reviewer/RUN.md). Long or file-heavy runs follow [`ramdisk-workspace`](Skills/ramdisk-workspace/SKILL.md). Both are adapted from [nature-skills](https://github.com/Yuan1z0825/nature-skills) under Apache-2.0.
 
 ## Documentation
 
