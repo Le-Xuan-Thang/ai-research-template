@@ -6,6 +6,7 @@ All notable changes to this research project are documented here. This file foll
 
 ### Added
 
+- Ramdisk-first workspace skill `Skills/ramdisk-workspace/` and helper `src/project/ramdisk.py` (tmpfs scratch with memory guard, persistent fallback, SHA-256 verified promotion per run, never-overwrite).
 - Figure QA skill `paper/Skills/nature-figure/` (Python-only, collision, glyph-floor and panel-alignment audits) and mock peer-review skill `paper/Skills/nature-reviewer/` with run guide and templates, adapted from nature-skills (Apache-2.0).
 - Proactive session-end handoff guidance for preserving unfinished agent work.
 - Project dashboard under `website/`.

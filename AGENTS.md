@@ -24,6 +24,7 @@ Repository rules:
 - Before writing or reviewing manuscript content, read `paper/Skills/write-ai-paper/SKILL.md`, its required `General.md`, and the routed task-specific guidance.
 - Before creating or changing any figure in `paper/figs/` or its plotting code, read `paper/Skills/nature-figure/SKILL.md`, run its audits, and record the results in a new `figure_qa_<date>_<nn>/` run record.
 - Run a mock peer review only when the user asks. Follow `paper/Skills/nature-reviewer/RUN.md` (protocol in its `SKILL.md`); keep reviews as internal evidence in a new run record, never in the manuscript.
+- Before launching long or file-heavy runs (simulation, training sweeps), follow `Skills/ramdisk-workspace/SKILL.md`: regenerable intermediates on a tmpfs ramdisk when available, final artefacts promoted to the experiment directory with checksum verification after each run.
 - Treat `website/` as a static evidence dashboard. Update it from canonical dataset, experiment, analysis, paper, and changelog records; do not maintain independent results there.
 - Record notable project-level changes in `CHANGELOG.md` under `Unreleased`.
 

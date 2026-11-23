@@ -30,6 +30,8 @@ Use deterministic seeds where meaningful, record software/hardware details that 
 
 ## 5. Synthesize and publish
 
+For long or file-heavy runs, keep regenerable intermediates on a tmpfs ramdisk when the machine has one and promote final artefacts to the experiment directory after each run (`Skills/ramdisk-workspace/SKILL.md`, `src/project/ramdisk.py`).
+
 Put cross-dataset tables, plots, and conclusions in `experiments/<experiment>/summary/`. Use `notebooks/analysis/` for comparisons, ablations, error analysis, statistics, and figure generation. Publication-ready material can then flow into `paper/figs/` and the single `paper/main.tex` while retaining links to its experiment and configuration. AI agents must follow `paper/Skills/write-ai-paper/SKILL.md` for manuscript tasks.
 
 Update `website/` with verified highlights, results, and milestones. It is a presentation layer: canonical values remain in experiment records and analysis outputs. Record notable repository changes in `CHANGELOG.md`.

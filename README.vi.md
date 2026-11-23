@@ -95,7 +95,7 @@ Xem [quy trình nghiên cứu đầy đủ](docs/vi/research-workflow.md).
 
 ## Quy trình agent AI
 
-Agent đọc [AGENTS.md](AGENTS.md), [.agent/state.md](.agent/state.md) và [.agent/handoff.md](.agent/handoff.md) nếu có trước khi sửa artifact nghiên cứu. Quyết định khoa học hoặc cấu trúc lâu dài nằm trong `.agent/decisions/`, không phải log hội thoại. Công việc bản thảo còn phải tuân theo [`write-ai-paper` skill](paper/Skills/write-ai-paper/SKILL.md) cục bộ; hình bài báo theo [`nature-figure`](paper/Skills/nature-figure/SKILL.md), và khi được yêu cầu, mô phỏng phản biện chạy bằng [`nature-reviewer`](paper/Skills/nature-reviewer/RUN.md). Hai skill này được chuyển thể từ [nature-skills](https://github.com/Yuan1z0825/nature-skills) theo giấy phép Apache-2.0.
+Agent đọc [AGENTS.md](AGENTS.md), [.agent/state.md](.agent/state.md) và [.agent/handoff.md](.agent/handoff.md) nếu có trước khi sửa artifact nghiên cứu. Quyết định khoa học hoặc cấu trúc lâu dài nằm trong `.agent/decisions/`, không phải log hội thoại. Công việc bản thảo còn phải tuân theo [`write-ai-paper` skill](paper/Skills/write-ai-paper/SKILL.md) cục bộ; hình bài báo theo [`nature-figure`](paper/Skills/nature-figure/SKILL.md), và khi được yêu cầu, mô phỏng phản biện chạy bằng [`nature-reviewer`](paper/Skills/nature-reviewer/RUN.md). Các lượt chạy dài hoặc sinh nhiều file theo [`ramdisk-workspace`](Skills/ramdisk-workspace/SKILL.md). Hai skill này được chuyển thể từ [nature-skills](https://github.com/Yuan1z0825/nature-skills) theo giấy phép Apache-2.0.
 
 ## Tài liệu
 
