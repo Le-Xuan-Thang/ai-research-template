@@ -84,7 +84,8 @@ def scratch_dir(persistent_run_dir, need_gb=0.0, project=None):
     ok, reason = ram_status(need_gb)
     project = project or Path.cwd().name
     if ok:
-        rel = run.relative_to(Path.cwd().resolve()) if run.is_relative_to(Path.cwd().resolve()) else Path(run.name)
+        cwd = Path.cwd().resolve()
+        rel = run.relative_to(cwd) if run.is_relative_to(cwd) else Path(*run.parts[1:])   # full path keeps runs distinct
         path = Path(_root()) / project / rel
     else:
         path = run / "scratch"
